@@ -10,11 +10,11 @@ source ~/.vim/vundle.vim
 filetype plugin indent on     " required
 
 " Platform (Windows, Mac, etc.) configuration.
-" source ~/.vim/platforms.vim
+source ~/.vim/platforms.vim
 " All of the Vim configuration.
 source ~/.vim/config.vim
 " New commands
-" source ~/.vim/commands.vim
+source ~/.vim/commands.vim
 " All hotkeys, not dependant on plugins, are mapped here.
 " source ~/.vim/mappings.vim
 " Plugin-specific configuration.
