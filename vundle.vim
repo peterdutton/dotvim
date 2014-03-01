@@ -27,6 +27,9 @@ Bundle 'kien/ctrlp.vim'
 " Automatic helpers
 "
 Bundle 'xolox/vim-session'
+Bundle 'ervandew/supertab'
+Bundle 'Valloric/MatchTagAlways'
+Bundle 'Valloric/YouCompleteMe'
 
 " MatchIt
 "
