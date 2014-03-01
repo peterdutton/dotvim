@@ -17,6 +17,7 @@ Bundle 'gmarik/vundle'
 "
 Bundle 'bling/vim-airline'
 Bundle 'nanotech/jellybeans.vim'
+Bundle 'mhinz/vim-signify'
 Bundle 'Rykka/colorv.vim'
 
 " Automatic helpers
