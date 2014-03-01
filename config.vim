@@ -60,7 +60,6 @@ set nofoldenable       " Disable folding entirely.
 set foldlevelstart=99  " I really don't like folds.
 set formatoptions=crql
 set iskeyword+=-       " Add extra characters that are valid parts of variables
-set iskeyword-=$       " Force remove dollar sign to help searching in PHP
 set nostartofline      " Don't go to the start of the line after some commands
 set scrolloff=3        " Keep three lines below the last line when scrolling
 set gdefault           " this makes search/replace global by default
