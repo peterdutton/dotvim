@@ -37,6 +37,7 @@ Bundle 'matchit.zip'
 Bundle 'StanAngeloff/php.vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'leshill/vim-json'
+Bundle 'vim-scripts/smarty-syntax'
 
 " Libraries
 "
