@@ -15,6 +15,25 @@ nnoremap <Leader>bi :call BundleReloadAndRun("BundleInstall")<CR>
 nnoremap <Leader>bu :call BundleReloadAndRun("BundleInstall!")<CR>
 nnoremap <Leader>bc :call BundleReloadAndRun("BundleClean")<CR>
 
+" ---------------
+" ctrlp.vim
+" ---------------
+" Ensure Ctrl-P isn't bound by default
+let g:ctrlp_map = ''
+
+" Ensure max height isn't too large. (for performance)
+let g:ctrlp_max_height = 10
+let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
+" Fix fix new windows opening in split from startify
+let g:ctrlp_reuse_window = 'startify'
+let g:ctrlp_mruf_max = 350
+let g:ctrlp_mruf_default_order = 0
+
+" Leader Commands
+nnoremap <leader>t :CtrlPRoot<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>u :CtrlPCurFile<CR>
+nnoremap <leader>m :CtrlPMRUFiles<CR>
 
 " ---------------
 " airline

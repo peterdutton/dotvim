@@ -20,6 +20,10 @@ Bundle 'nanotech/jellybeans.vim'
 Bundle 'mhinz/vim-signify'
 Bundle 'Rykka/colorv.vim'
 
+" Navigation
+"
+Bundle 'kien/ctrlp.vim'
+
 " Automatic helpers
 "
 Bundle 'xolox/vim-session'
