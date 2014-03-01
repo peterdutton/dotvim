@@ -45,3 +45,7 @@ Bundle 'vim-scripts/smarty-syntax'
 " Libraries
 "
 Bundle 'xolox/vim-misc'
+
+" Commands
+"
+Bundle 'mattn/emmet-vim'
