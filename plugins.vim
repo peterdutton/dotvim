@@ -18,8 +18,7 @@ nnoremap <Leader>bc :call BundleReloadAndRun("BundleClean")<CR>
 " ---------------
 " ctrlp.vim
 " ---------------
-" Ensure Ctrl-P isn't bound by default
-let g:ctrlp_map = ''
+let g:ctrlp_map = '<c-p>'
 
 " Ensure max height isn't too large. (for performance)
 let g:ctrlp_max_height = 10
