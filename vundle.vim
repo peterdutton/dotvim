@@ -32,6 +32,12 @@ Bundle 'xolox/vim-session'
 "
 Bundle 'matchit.zip'
 
+" Language Additions
+"
+Bundle 'StanAngeloff/php.vim'
+Bundle 'pangloss/vim-javascript'
+Bundle 'leshill/vim-json'
+
 " Libraries
 "
 Bundle 'xolox/vim-misc'
