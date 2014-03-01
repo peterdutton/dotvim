@@ -48,6 +48,10 @@ let g:airline_section_z = '%3p%% %{substitute(line("."), "\\v(\\d)((\\d\\d\\d)+\
 " Make cssAttrs (center, block, etc.) the same color as units
 hi! link cssAttr Constant
 
+" ------
+" ColorV
+" ------
+let g:colorv_preview_ftype = 'css,javascript,scss,stylus'
 
 " ---------------
 " Session
