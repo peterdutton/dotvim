@@ -43,6 +43,11 @@ let g:mta_filetypes = {
     \}
 
 " ---------------
+" Indent Guides
+" ---------------
+let g:indent_guides_enable_on_vim_startup = 1
+
+" ---------------
 " YouCompleteMe
 " ---------------
 let g:ycm_complete_in_comments = 1

@@ -15,6 +15,7 @@ Bundle 'gmarik/vundle'
 
 " UI Additions
 "
+Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'bling/vim-airline'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'mhinz/vim-signify'
