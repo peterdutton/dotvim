@@ -42,6 +42,10 @@ if exists('+ballooneval')
   " 100 second delay seems to be the only way to disable the tooltips
   set balloondelay=100000
 endif
+" ignore whitespace changes while in diff mode
+if &diff
+set diffopt+=iwhite
+endif
 
 " ---------------
 " Behaviors
