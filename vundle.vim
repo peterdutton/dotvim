@@ -31,6 +31,7 @@ Bundle 'xolox/vim-session'
 Bundle 'ervandew/supertab'
 Bundle 'Valloric/MatchTagAlways'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/syntastic'
 
 " MatchIt
 "
