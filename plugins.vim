@@ -20,7 +20,7 @@ nnoremap <Leader>bc :call BundleReloadAndRun("BundleClean")<CR>
 " ---------------
 let g:ctrlp_map = '<c-p>'
 
-Ensure max height isn't too large. (for performance)
+" Ensure max height isn't too large. (for performance)
 let g:ctrlp_max_height = 10
 let g:ctrlp_mruf_max = 350
 let g:ctrlp_mruf_default_order = 0
