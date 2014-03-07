@@ -23,8 +23,7 @@ Bundle 'Rykka/colorv.vim'
 
 " Navigation
 "
-" Bundle 'kien/ctrlp.vim'
-Bundle 'Shougo/unite.vim'
+Bundle 'kien/ctrlp.vim'
 
 " Automatic helpers
 "
@@ -52,4 +51,4 @@ Bundle 'xolox/vim-misc'
 " Commands
 "
 Bundle 'mattn/emmet-vim'
-" Bundle 'rking/ag.vim'
+Bundle 'rking/ag.vim'
