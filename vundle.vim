@@ -30,6 +30,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'xolox/vim-session'
 Bundle 'ervandew/supertab'
 Bundle 'Valloric/MatchTagAlways'
+Bundle 'scrooloose/syntastic'
 
 " MatchIt
 "
