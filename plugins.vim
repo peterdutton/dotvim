@@ -18,18 +18,18 @@ nnoremap <Leader>bc :call BundleReloadAndRun("BundleClean")<CR>
 " ---------------
 " ctrlp.vim
 " ---------------
-let g:ctrlp_map = '<c-p>'
+" let g:ctrlp_map = '<c-p>'
 
 " Ensure max height isn't too large. (for performance)
-let g:ctrlp_max_height = 10
-let g:ctrlp_mruf_max = 350
-let g:ctrlp_mruf_default_order = 0
+" let g:ctrlp_max_height = 10
+" let g:ctrlp_mruf_max = 350
+" let g:ctrlp_mruf_default_order = 0
 
 " Leader Commands
-nnoremap <leader>t :CtrlPRoot<CR>
-nnoremap <leader>b :CtrlPBuffer<CR>
-nnoremap <leader>u :CtrlPCurFile<CR>
-nnoremap <leader>m :CtrlPMRUFiles<CR>
+" nnoremap <leader>t :CtrlPRoot<CR>
+" nnoremap <leader>b :CtrlPBuffer<CR>
+" nnoremap <leader>u :CtrlPCurFile<CR>
+" nnoremap <leader>m :CtrlPMRUFiles<CR>
 
 " ---------------
 " MatchTagAlways
