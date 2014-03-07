@@ -42,6 +42,11 @@ let g:mta_filetypes = {
     \ 'eruby' : 1,
     \}
 
+" -----------
+" neocomplete
+" -----------
+let g:neocomplete#enable_at_startup = 1
+
 " ---------------
 " Indent Guides
 " ---------------
