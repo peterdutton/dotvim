@@ -52,3 +52,4 @@ Bundle 'xolox/vim-misc'
 "
 Bundle 'mattn/emmet-vim'
 Bundle 'rking/ag.vim'
+Bundle 'tomtom/tcomment_vim'
