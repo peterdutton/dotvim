@@ -51,3 +51,4 @@ Bundle 'xolox/vim-misc'
 " Commands
 "
 Bundle 'mattn/emmet-vim'
+Bundle 'rking/ag.vim'
