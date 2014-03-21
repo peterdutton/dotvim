@@ -123,3 +123,8 @@ let g:colorv_preview_ftype = 'css,javascript,scss,stylus'
 let g:session_autosave = 'yes'
 let g:session_autoload = 'yes'
 nnoremap <leader>os :OpenSession<CR>
+
+" -------
+" vim-stringify
+" -------
+map <leader>g call Stringify()<CR>
