@@ -127,4 +127,4 @@ nnoremap <leader>os :OpenSession<CR>
 " -------
 " vim-stringify
 " -------
-map <leader>g call Stringify()<CR>
+map <leader>g :call Stringify()<CR>
