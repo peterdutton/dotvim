@@ -20,6 +20,6 @@ source ~/.vim/commands.vim
 " Plugin-specific configuration.
 source ~/.vim/plugins.vim
 " Small custom functions.
-" source ~/.vim/functions.vim
+source ~/.vim/functions.vim
 " Auto commands.
 " source ~/.vim/autocmds.vim
