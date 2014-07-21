@@ -25,7 +25,7 @@ endfunction
 
 vnoremap <leader>th :call TranslateHTML()<CR>
 
-" Smarty: Translate (PHP)
+" Translate (PHP)
 "
 function! TranslatePHP()
     " yank current visual selection to reg x
