@@ -43,6 +43,7 @@ Bundle 'StanAngeloff/php.vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'leshill/vim-json'
 Bundle 'vim-scripts/smarty-syntax'
+Bundle 'vim-scripts/vcscommand.vim'
 
 " Libraries
 "
