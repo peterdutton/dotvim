@@ -20,10 +20,12 @@ Bundle 'bling/vim-airline'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'mhinz/vim-signify'
 Bundle 'Rykka/colorv.vim'
+Bundle 'miyakogi/conoline.vim'
 
 " Navigation
 "
 Bundle 'kien/ctrlp.vim'
+Bundle 'DavidEGx/ctrlp-smarttabs'
 
 " Automatic helpers
 "
@@ -44,6 +46,7 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'leshill/vim-json'
 Bundle 'vim-scripts/smarty-syntax'
 Bundle 'vim-scripts/vcscommand.vim'
+Bundle 'chrisbra/csv.vim'
 
 " Libraries
 "
