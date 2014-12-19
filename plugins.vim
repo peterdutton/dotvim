@@ -20,6 +20,9 @@ nnoremap <Leader>bc :call BundleReloadAndRun("BundleClean")<CR>
 " ---------------
 let g:ctrlp_map = '<c-p>'
 
+" enable the 'smarttabs' CtrlP extension
+let g:ctrlp_extensions = ['smarttabs']
+
 " Ensure max height isn't too large. (for performance)
 let g:ctrlp_max_height = 10
 let g:ctrlp_mruf_max = 350
@@ -78,6 +81,11 @@ let g:airline_section_c = '%t'
 let g:airline_section_y = ''
 let g:airline_section_z = '%3p%% %#__accent_bold#%4l%#__restore__#:%3'
 let g:airline_section_z = '%3p%% %{substitute(line("."), "\\v(\\d)((\\d\\d\\d)+\\d@!)@=", "\\1,", "g")}|%{substitute(line("$"), "\\v(\\d)((\\d\\d\\d)+\\d@!)@=", "\\1,", "g")}'
+
+" ---------------
+"  Conoline.vim prefs
+" ---------------
+let g:conoline_auto_enable = 1
 
 " ---------------
 " jellybeans.vim colorscheme tweaks
