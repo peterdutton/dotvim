@@ -31,7 +31,8 @@ set laststatus=2   " Always show the statusline
 set cmdheight=1    " Make the command area one line high
 set encoding=utf-8
 set noshowmode     " Don't show the mode since Powerline shows it
-set title          " Set the title of the window in the terminal to the file
+set title 
+let &titleold=getcwd()
 if exists('+colorcolumn')
   set colorcolumn=80 " Color the 80th column differently as a wrapping guide.
 endif

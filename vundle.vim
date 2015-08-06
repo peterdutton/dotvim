@@ -7,54 +7,58 @@ call vundle#rc()
 
 " let Vundle manage Vundle, required
 "
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 "------------------
-" Plugin Bundles
+" Plugins
 " -----------------
 
 " UI Additions
 "
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'bling/vim-airline'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'mhinz/vim-signify'
-Bundle 'Rykka/colorv.vim'
-Bundle 'miyakogi/conoline.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'bling/vim-airline'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'mhinz/vim-signify'
+Plugin 'Rykka/colorv.vim'
+Plugin 'miyakogi/conoline.vim'
 
 " Navigation
 "
-Bundle 'kien/ctrlp.vim'
-Bundle 'DavidEGx/ctrlp-smarttabs'
+Plugin 'kien/ctrlp.vim'
+" Plugin 'DavidEGx/ctrlp-smarttabs'
 
 " Automatic helpers
 "
-Bundle 'xolox/vim-session'
-Bundle 'ervandew/supertab'
-Bundle 'Valloric/MatchTagAlways'
-Bundle 'scrooloose/syntastic'
-Bundle 'Shougo/neocomplete'
+Plugin 'xolox/vim-session'
+" Plugin 'ervandew/supertab'
+Plugin 'Valloric/MatchTagAlways'
+Plugin 'scrooloose/syntastic'
+Plugin 'Shougo/neocomplete'
 
 " MatchIt
 "
-Bundle 'matchit.zip'
+Plugin 'matchit.zip'
 
 " Language Additions
 "
-Bundle 'StanAngeloff/php.vim'
-Bundle 'pangloss/vim-javascript'
-Bundle 'leshill/vim-json'
-Bundle 'vim-scripts/smarty-syntax'
-Bundle 'vim-scripts/vcscommand.vim'
-Bundle 'chrisbra/csv.vim'
+Plugin 'xolox/vim-easytags'
+Plugin 'StanAngeloff/php.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'leshill/vim-json'
+Plugin 'vim-scripts/smarty-syntax'
+"Plugin 'vim-scripts/vcscommand.vim'
+Plugin 'tpope/vim-fugitive'
+"Plugin 'chrisbra/csv.vim'
+Plugin 'alvan/vim-php-manual'
 
 " Libraries
 "
-Bundle 'xolox/vim-misc'
+Plugin 'xolox/vim-misc'
 
 " Commands
 "
-Bundle 'mattn/emmet-vim'
-Bundle 'rking/ag.vim'
-Bundle 'tomtom/tcomment_vim'
-Bundle '29decibel/vim-stringify'
+Plugin 'mattn/emmet-vim'
+Plugin 'rking/ag.vim'
+Plugin 'tomtom/tcomment_vim'
+Plugin '29decibel/vim-stringify'
+Plugin 'qwertologe/nextval.vim'

@@ -16,12 +16,20 @@ nnoremap <Leader>bu :call BundleReloadAndRun("BundleInstall!")<CR>
 nnoremap <Leader>bc :call BundleReloadAndRun("BundleClean")<CR>
 
 " ---------------
+" ag.vim
+" ---------------
+
+" fix for a plugin upgrade which broke functionality on older
+" versions of ag (including mine)
+let g:ag_prg="ag --column"
+
+" ---------------
 " ctrlp.vim
 " ---------------
 let g:ctrlp_map = '<c-p>'
 
 " enable the 'smarttabs' CtrlP extension
-let g:ctrlp_extensions = ['smarttabs']
+" let g:ctrlp_extensions = ['smarttabs']
 
 " Ensure max height isn't too large. (for performance)
 let g:ctrlp_max_height = 10
@@ -74,8 +82,6 @@ let g:airline_mode_map = {
       \ 'c'  : 'CMD',
       \ '' : 'VB',
       \ }
-" Show the current working directory folder name
-let g:airline_section_b = '%{substitute(getcwd(), ".*\/", "", "g")} '
 " Just show the file name
 let g:airline_section_c = '%t'
 let g:airline_section_y = ''
