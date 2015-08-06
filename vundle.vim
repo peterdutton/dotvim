@@ -46,10 +46,9 @@ Plugin 'StanAngeloff/php.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'leshill/vim-json'
 Plugin 'vim-scripts/smarty-syntax'
-"Plugin 'vim-scripts/vcscommand.vim'
 Plugin 'tpope/vim-fugitive'
-"Plugin 'chrisbra/csv.vim'
 Plugin 'alvan/vim-php-manual'
+Plugin 'marijnh/tern_for_vim'
 
 " Libraries
 "
