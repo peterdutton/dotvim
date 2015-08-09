@@ -48,6 +48,8 @@ Plugin 'StanAngeloff/php.vim'
 Plugin 'alvan/vim-php-manual'
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'vim-scripts/smarty-syntax'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'rodjek/vim-puppet'
 
 " Libraries
 "
