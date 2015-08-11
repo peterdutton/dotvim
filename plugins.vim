@@ -71,6 +71,11 @@ let g:neocomplete#force_omni_input_patterns.php = '\h\w*\|[^. \t]->\%(\h\w*\)\?\
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
+" ---------
+" easytags
+" --------
+let g:easytags_by_filetype = "~/.vim/tags"
+
 " ---------------
 " Indent Guides
 " ---------------
