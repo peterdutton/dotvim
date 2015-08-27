@@ -39,14 +39,14 @@ Plugin 'matchit.zip'
 
 " Language Additions
 "
-Plugin 'xolox/vim-easytags'
+" Plugin 'xolox/vim-easytags'
 Plugin 'pangloss/vim-javascript'
-Plugin 'marijnh/tern_for_vim'
+" Plugin 'marijnh/tern_for_vim'
 Plugin 'leshill/vim-json'
 Plugin 'tpope/vim-fugitive'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'alvan/vim-php-manual'
-Plugin 'shawncplus/phpcomplete.vim'
+" Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'vim-scripts/smarty-syntax'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'rodjek/vim-puppet'
