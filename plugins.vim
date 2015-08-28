@@ -28,8 +28,8 @@ let g:ag_prg="ag --column"
 " ---------------
 let g:ctrlp_map = '<c-p>'
 
-" enable the 'smarttabs' CtrlP extension
-" let g:ctrlp_extensions = ['smarttabs']
+" start in buffer mode
+let g:ctrlp_cmd = 'CtrlPBuffer'
 
 " Ensure max height isn't too large. (for performance)
 let g:ctrlp_max_height = 10
