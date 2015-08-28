@@ -21,6 +21,7 @@ Plugin 'nanotech/jellybeans.vim'
 Plugin 'mhinz/vim-signify'
 Plugin 'Rykka/colorv.vim'
 Plugin 'miyakogi/conoline.vim'
+Plugin 'sjbach/lusty'
 
 " Navigation
 "
