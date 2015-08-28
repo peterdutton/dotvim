@@ -131,9 +131,12 @@ set mouse=a    " Mouse in all modes
 " Better complete options to speed it up
 set complete=.,w,b,u,U
 
-" set up cscope/gnu global
+" ---------------
+" set up gnu global/cscope
+" ---------------
 set cscopeprg=gtags-cscope
 cs add GTAGS
+set wildignore+=GTAGS,GRTAGS,GPATH
 if has('cscope')
     set cscopetag cscopeverbose
     if has('quickfix')
