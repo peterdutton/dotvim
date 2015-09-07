@@ -62,6 +62,11 @@ if !exists('g:neocomplete#force_omni_input_patterns')
 endif
 let g:neocomplete#force_omni_input_patterns.php = '\h\w*\|[^. \t]->\%(\h\w*\)\?\|\h\w*::\%(\h\w*\)\?'
 
+" Gtags
+" map Ctrl-] to GTags rather than the default tag behaviour
+"
+nnoremap <leader>] :GtagsCursor<CR>
+
 " ------------
 " omnicomplete
 " ------------
