@@ -130,3 +130,18 @@ set mouse=a    " Mouse in all modes
 
 " Better complete options to speed it up
 set complete=.,w,b,u,U
+
+" ---------------
+" set up gnu global/cscope
+" ---------------
+set cscopeprg=gtags-cscope
+cs add GTAGS
+set wildignore+=GTAGS,GRTAGS,GPATH
+if has('cscope')
+    set cscopetag cscopeverbose
+    if has('quickfix')
+        set cscopequickfix=s-,c-,d-,i-,t-,e-
+    endif
+
+    map <C-\> :cs find c <C-R>=expand("<cword>")<CR><CR>
+endif

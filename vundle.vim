@@ -25,6 +25,7 @@ Plugin 'miyakogi/conoline.vim'
 " Navigation
 "
 Plugin 'kien/ctrlp.vim'
+Plugin 'sjbach/lusty'
 
 " Automatic helpers
 "
