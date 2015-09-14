@@ -33,6 +33,8 @@ Plugin 'xolox/vim-session'
 Plugin 'Valloric/MatchTagAlways'
 Plugin 'scrooloose/syntastic'
 Plugin 'Shougo/neocomplete'
+Plugin 'vimwiki/vimwiki'
+Plugin 'sickill/vim-pasta'
 
 " MatchIt
 "
