@@ -31,6 +31,7 @@ set laststatus=2   " Always show the statusline
 set cmdheight=1    " Make the command area one line high
 set encoding=utf-8
 set noshowmode     " Don't show the mode since Powerline shows it
+set lazyredraw     " speed up UI when things like syntastic are in use
 set title 
 let &titleold=getcwd()
 if exists('+colorcolumn')
