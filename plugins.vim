@@ -29,7 +29,7 @@ let g:ag_prg="ag --column"
 let g:ctrlp_map = '<c-p>'
 
 " start in buffer mode
-let g:ctrlp_cmd = 'CtrlPBuffer'
+" let g:ctrlp_cmd = 'CtrlPBuffer'
 
 " Ensure max height isn't too large. (for performance)
 let g:ctrlp_max_height = 10
@@ -41,6 +41,11 @@ nnoremap <leader>t :CtrlPRoot<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <leader>u :CtrlPCurFile<CR>
 nnoremap <leader>m :CtrlPMRUFiles<CR>
+
+" ---------------
+" VimWiki
+" ---------------
+let g:vimwiki_folding = 'expr'
 
 " ---------------
 " MatchTagAlways
@@ -147,7 +152,7 @@ let g:syntastic_html_checkers = ['handlebars']
 " Hat tip http://git.io/SPIBfg
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
-let g:syntastic_full_redraws = 1
+" let g:syntastic_full_redraws = 1
 
 
 " ------
