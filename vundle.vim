@@ -25,7 +25,7 @@ Plugin 'miyakogi/conoline.vim'
 " Navigation
 "
 Plugin 'kien/ctrlp.vim'
-Plugin 'sjbach/lusty'
+Plugin 'sandeepcr529/Buffet.vim'
 
 " Automatic helpers
 "
@@ -42,7 +42,6 @@ Plugin 'matchit.zip'
 
 " Language Additions
 "
-" Plugin 'xolox/vim-easytags'
 Plugin 'pangloss/vim-javascript'
 " Plugin 'marijnh/tern_for_vim'
 Plugin 'leshill/vim-json'
