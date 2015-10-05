@@ -11,10 +11,6 @@ function BundleReloadAndRun(command)
   execute a:command
 endfunction
 
-nnoremap <Leader>bi :call BundleReloadAndRun("BundleInstall")<CR>
-nnoremap <Leader>bu :call BundleReloadAndRun("BundleInstall!")<CR>
-nnoremap <Leader>bc :call BundleReloadAndRun("BundleClean")<CR>
-
 " ---------------
 " ag.vim
 " ---------------
@@ -28,19 +24,15 @@ let g:ag_prg="ag --column"
 " ---------------
 let g:ctrlp_map = '<c-p>'
 
-" start in buffer mode
-" let g:ctrlp_cmd = 'CtrlPBuffer'
-
 " Ensure max height isn't too large. (for performance)
 let g:ctrlp_max_height = 10
 let g:ctrlp_mruf_max = 350
 let g:ctrlp_mruf_default_order = 0
 
-" Leader Commands
-nnoremap <leader>t :CtrlPRoot<CR>
-nnoremap <leader>b :CtrlPBuffer<CR>
-nnoremap <leader>u :CtrlPCurFile<CR>
-nnoremap <leader>m :CtrlPMRUFiles<CR>
+" ---------------
+" Buffet (buffer list)
+" ---------------
+nnoremap <leader>b :Bufferlist<CR>
 
 " ---------------
 " VimWiki
