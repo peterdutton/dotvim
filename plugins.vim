@@ -40,6 +40,22 @@ nnoremap <leader>b :Bufferlist<CR>
 let g:vimwiki_folding = 'expr'
 
 " ---------------
+" Vdebug
+" ---------------
+" map local dev folder to remote (vagrant) path
+" (create variable as it doesn't exist by default at the point that this file
+" is loaded)
+if !exists('g:vdebug_options')
+    let g:vdebug_options = {}
+endif
+let g:vdebug_options['path_maps'] = {"/src": "/home/peter/new_live_git"}
+
+"----------------
+" editorconfig
+"----------------
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+
+" ---------------
 " MatchTagAlways
 " ---------------
 let g:mta_filetypes = {

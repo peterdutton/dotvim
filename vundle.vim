@@ -35,6 +35,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'Shougo/neocomplete'
 Plugin 'vimwiki/vimwiki'
 Plugin 'sickill/vim-pasta'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'joonty/vdebug'
 
 " MatchIt
 "
