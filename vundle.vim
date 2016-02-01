@@ -17,6 +17,7 @@ Plugin 'gmarik/vundle'
 "
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'mhinz/vim-signify'
 Plugin 'Rykka/colorv.vim'
