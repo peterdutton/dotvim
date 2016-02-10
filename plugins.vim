@@ -67,16 +67,36 @@ let g:mta_filetypes = {
     \ 'eruby' : 1,
     \}
 
-" -----------
+" ------------
 " neocomplete
-" -----------
+" ------------
 let g:neocomplete#enable_at_startup = 1
 if !exists('g:neocomplete#force_omni_input_patterns')
         let g:neocomplete#force_omni_input_patterns = {}
 endif
 let g:neocomplete#force_omni_input_patterns.php = '\h\w*\|[^. \t]->\%(\h\w*\)\?\|\h\w*::\%(\h\w*\)\?'
 
+" ------------
+" neosnippet
+" ------------
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" SuperTab like snippets behavior.
+imap <expr><TAB> pumvisible() ? "\<C-n>" : neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+" For conceal markers.
+if has('conceal')
+    set conceallevel=2 concealcursor=niv
+endif
+
+
+" ------------
 " Gtags
+" ------------
 " map Ctrl-] to GTags rather than the default tag behaviour
 "
 nnoremap <leader>] :GtagsCursor<CR>
@@ -90,9 +110,9 @@ nnoremap <leader>] :GtagsCursor<CR>
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
-" ---------
+" ------------
 " easytags
-" --------
+" ------------
 let g:easytags_by_filetype = "~/.vim/tags"
 
 " ---------------
