@@ -16,7 +16,7 @@ Plugin 'gmarik/vundle'
 " UI Additions
 "
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'mhinz/vim-signify'
