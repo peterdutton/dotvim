@@ -25,8 +25,8 @@ endif
 " UI
 " ---------------
 set ruler          " Ruler on
-set number         " Line numbers on
-set wrap         " Line wrapping on
+set relativenumber " Relative line numbers on
+set wrap           " Line wrapping on
 set laststatus=2   " Always show the statusline
 set cmdheight=1    " Make the command area one line high
 set encoding=utf-8
