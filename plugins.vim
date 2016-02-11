@@ -70,7 +70,7 @@ let g:mta_filetypes = {
 " ------------
 " UltiSnips
 " ------------
-let g:UltiSnipsExpandTrigger="<c-Space>"
+let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
