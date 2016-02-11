@@ -67,6 +67,13 @@ let g:mta_filetypes = {
     \ 'eruby' : 1,
     \}
 
+" ------------
+" UltiSnips
+" ------------
+let g:UltiSnipsExpandTrigger="<c-Space>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
 
 " ------------
 " Gtags
@@ -83,11 +90,6 @@ nnoremap <leader>] :GtagsCursor<CR>
 " insert mode
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-
-" ------------
-" easytags
-" ------------
-let g:easytags_by_filetype = "~/.vim/tags"
 
 " ---------------
 " Indent Guides
