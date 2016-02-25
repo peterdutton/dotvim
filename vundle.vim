@@ -2,12 +2,12 @@ set nocompatible
 filetype off
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 " let Vundle manage Vundle, required
 "
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 "------------------
 " Plugins
@@ -39,6 +39,9 @@ Plugin 'vimwiki/vimwiki'
 Plugin 'sickill/vim-pasta'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'joonty/vdebug'
+Plugin 'tpope/vim-surround'
+Plugin 'kana/vim-textobj-user'
+Plugin 'glts/vim-textobj-comment'
 
 " MatchIt
 "
