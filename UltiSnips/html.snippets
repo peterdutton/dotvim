@@ -168,19 +168,19 @@ endsnippet
 
 snippet div "<div>" w
 <div>
-	$0
+	${VISUAL}
 </div>
 endsnippet
 
 snippet div. "<div> with class" w
 <div`!p snip.rv=' class="' if t[1] else ""`${1:name}`!p snip.rv = '"' if t[1] else ""`>
-	$0
+	${VISUAL}
 </div>
 endsnippet
 
 snippet div# "<div> with ID & class" w
 <div`!p snip.rv=' id="' if t[1] else ""`${1:name}`!p snip.rv = '"' if t[1] else ""``!p snip.rv=' class="' if t[2] else ""`${2:name}`!p snip.rv = '"' if t[2] else ""`>
-	$0
+	${VISUAL}
 </div>
 endsnippet
 
@@ -307,6 +307,18 @@ endsnippet
 # START SMARTY SNIPPETS:
 snippet trans "translate token" w
 {translate token="${VISUAL}"}
+endsnippet
+
+snippet literal "literal" w
+{literal}
+${VISUAL}
+{/literal}
+endsnippet
+
+snippet formsection "formSection wrapper" w
+<div dojoType="widgets.formSection" sectionIdentifier="${1}" sourceTable="sec_${2}" reviewFormId="{$review_form_id}">
+	${VISUAL}
+</div>
 endsnippet
 
 snippet var
