@@ -13,3 +13,5 @@ nmap <leader>d :bd<CR>
 " to go parent tag in HTML
 nnoremap ]t vatv
 nnoremap [t vatov
+
+nmap <leader>fc gqip
