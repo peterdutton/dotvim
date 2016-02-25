@@ -70,10 +70,13 @@ let g:mta_filetypes = {
 " ------------
 " UltiSnips
 " ------------
+" key mappings
 let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
+" set snipmate variable for compatibility with snipmate snippets; do this
+" dynamically using the $USER variable
+let g:snips_author=$USER
 
 " ------------
 " Gtags
