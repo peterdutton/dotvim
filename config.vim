@@ -109,6 +109,8 @@ set listchars=""
 set listchars=tab:▸▸
 " show trailing spaces as dots
 set listchars+=trail:.
+" show trailing spaces as errors
+match ErrorMsg '\s\+$'
 " The character to show in the last column when wrap is off and the line
 " continues beyond the right of the screen
 set listchars+=extends:>
