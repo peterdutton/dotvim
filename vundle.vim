@@ -25,7 +25,7 @@ Plugin 'miyakogi/conoline.vim'
 
 " Navigation
 "
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'sandeepcr529/Buffet.vim'
 
 " Automatic helpers
@@ -37,7 +37,9 @@ Plugin 'scrooloose/syntastic'
 Plugin 'SirVer/ultisnips'
 Plugin 'vimwiki/vimwiki'
 Plugin 'sickill/vim-pasta'
-Plugin 'editorconfig/editorconfig-vim'
+" Plugin 'roxma/vim-paste-easy'
+" Plugin 'editorconfig/editorconfig-vim'
+Plugin 'sgur/vim-editorconfig'
 Plugin 'joonty/vdebug'
 Plugin 'tpope/vim-surround'
 Plugin 'kana/vim-textobj-user'
@@ -53,6 +55,7 @@ Plugin 'pangloss/vim-javascript'
 " Plugin 'marijnh/tern_for_vim'
 Plugin 'leshill/vim-json'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tommcdo/vim-fugitive-blame-ext'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'alvan/vim-php-manual'
 " Plugin 'shawncplus/phpcomplete.vim'
@@ -60,6 +63,7 @@ Plugin 'vim-scripts/smarty-syntax'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'vim-scripts/gtags.vim'
+Plugin 'dkasak/manpageview'
 
 " Libraries
 "

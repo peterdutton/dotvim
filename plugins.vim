@@ -54,7 +54,7 @@ let g:vdebug_options['continuous_mode'] = 1
 "----------------
 " editorconfig
 "----------------
-let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+" let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 " ---------------
 " MatchTagAlways
@@ -172,6 +172,7 @@ let g:colorv_preview_ftype = 'css,javascript,scss,stylus'
 " Session
 " ---------------
 let g:session_autosave = 'yes'
+let g:session_autosave_periodic = 5
 let g:session_autoload = 'yes'
 nnoremap <leader>os :OpenSession<CR>
 

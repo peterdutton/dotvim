@@ -44,6 +44,8 @@ if exists('+ballooneval')
   " 100 second delay seems to be the only way to disable the tooltips
   set balloondelay=100000
 endif
+" default to a vertical diff
+set diffopt+=vertical
 " ignore whitespace changes while in diff mode
 if &diff
 set diffopt+=iwhite
@@ -60,7 +62,7 @@ set hidden             " Change buffer - without saving
 set history=768        " Number of things to remember in history.
 set cf                 " Enable error files & error jumping.
 set clipboard+=unnamed " Yanks go on clipboard instead.
-set autowrite          " Writes on make/shell commands
+set noautowrite        " Writes on make/shell commands - DISABLE THIS as it was saving after every change! Poss plugin bug causing incompatibility as it has been on for ages before this without an issue.
 set nofoldenable       " Disable folding entirely.
 set foldlevelstart=99  " I really don't like folds.
 set formatoptions=crql
