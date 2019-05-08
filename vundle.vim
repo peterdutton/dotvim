@@ -18,6 +18,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'majutsushi/tagbar'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'mhinz/vim-signify'
 Plugin 'Rykka/colorv.vim'
@@ -35,15 +36,21 @@ Plugin 'Valloric/MatchTagAlways'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'SirVer/ultisnips'
+Plugin 'Raimondi/delimitMate'
 Plugin 'vimwiki/vimwiki'
+
 Plugin 'sickill/vim-pasta'
+
 " Plugin 'roxma/vim-paste-easy'
-" Plugin 'editorconfig/editorconfig-vim'
-Plugin 'sgur/vim-editorconfig'
+"" Plugin 'editorconfig/editorconfig-vim'
+" Plugin 'sgur/vim-editorconfig'
 Plugin 'joonty/vdebug'
 Plugin 'tpope/vim-surround'
 Plugin 'kana/vim-textobj-user'
 Plugin 'glts/vim-textobj-comment'
+
+" Productivity
+Plugin 'wakatime/vim-wakatime'
 
 " MatchIt
 "
@@ -52,6 +59,7 @@ Plugin 'matchit.zip'
 " Language Additions
 "
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 " Plugin 'marijnh/tern_for_vim'
 Plugin 'leshill/vim-json'
 Plugin 'tpope/vim-fugitive'
@@ -62,8 +70,11 @@ Plugin 'alvan/vim-php-manual'
 Plugin 'vim-scripts/smarty-syntax'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'rodjek/vim-puppet'
+Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'vim-scripts/gtags.vim'
-Plugin 'dkasak/manpageview'
+Plugin 'vim-scripts/svg.vim'
+Plugin 'jasonshell/vim-svg-indent'
+" Plugin 'dkasak/manpageview'
 
 " Libraries
 "
@@ -72,7 +83,9 @@ Plugin 'xolox/vim-misc'
 " Commands
 "
 Plugin 'mattn/emmet-vim'
-Plugin 'rking/ag.vim'
+" Plugin 'rking/ag.vim'
+Plugin 'mhinz/vim-grepper'
 Plugin 'tomtom/tcomment_vim'
 Plugin '29decibel/vim-stringify'
 Plugin 'qwertologe/nextval.vim'
+Plugin 'tpope/vim-dadbod'
