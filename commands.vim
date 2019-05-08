@@ -13,4 +13,4 @@ command! -nargs=1 SilentCmd
 command! W w
 command! Q q
 
-command! CompareToPrd execute ':Gvsplit production:%' | execute ':windo diffthis'
+command! CompareToPrd execute ':Gdiff production:%'
