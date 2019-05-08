@@ -20,9 +20,33 @@ endfunction
 let g:ag_prg="ag --column"
 
 " ---------------
+" vim-grepper
+" ---------------
+
+" add vim-grepper map
+nnoremap <leader>g :Grepper -tool ag<cr>
+nnoremap <leader>G :Grepper -tool ag -buffer<cr>
+" initialize g:grepper with default values
+runtime plugin/grepper.vim
+" do searches based on current repo
+let g:grepper.dir = 'repo'
+let g:grepper.tools = ['ag', 'git', 'grep']
+
+" add map for normal/visual mode
+nmap gs  <plug>(GrepperOperator)
+xmap gs  <plug>(GrepperOperator)
+
+" ---------------
+" vim-pasta (disable for CtrlP)
+" ---------------
+let g:pasta_disabled_filetypes = ['ctrlp']
+
+" ---------------
 " ctrlp.vim
 " ---------------
 let g:ctrlp_map = '<c-p>'
+" let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
 
 " Ensure max height isn't too large. (for performance)
 let g:ctrlp_max_height = 10
@@ -45,16 +69,54 @@ let g:vimwiki_folding = 'expr'
 " map local dev folder to remote (vagrant) path
 " (create variable as it doesn't exist by default at the point that this file
 " is loaded)
+
 if !exists('g:vdebug_options')
     let g:vdebug_options = {}
 endif
-let g:vdebug_options['path_maps'] = {"/src": "/home/peter/new_live_git"}
-let g:vdebug_options['continuous_mode'] = 1
+let g:vdebug_options.path_maps = {"/home/webs/production_hr": "/home/peter/new_live_git"}
+let g:vdebug_options.continuous_mode = 1
+
+" now I'm explicitly setting the options from the defaults,
+" because they don't seem to be getting created anynmore.
+"
+" let g:vdebug_options = {
+" \    "port" : 9000,
+" \    "timeout" : 20,
+" \    "server" : '',
+" \    "on_close" : 'stop',
+" \    "break_on_open" : 1,
+" \    "ide_key" : '',
+" \    "debug_window_level" : 0,
+" \    "debug_file_level" : 0,
+" \    "debug_file" : "",
+" \    "path_maps" : {"/home/webs/production_hr": "/home/peter/new_live_git"},
+" \    "watch_window_style" : 'expanded',
+" \    "marker_default" : '⬦',
+" \    "marker_closed_tree" : '▸',
+" \    "marker_open_tree" : '▾',
+" \    "continuous_mode"  : 1
+" \}
+if !exists("g:vdebug_keymap")
+    let g:vdebug_keymap = {
+    \    "run" : "<F5>",
+    \    "run_to_cursor" : "<F9>",
+    \    "step_over" : "<F2>",
+    \    "step_into" : "<F3>",
+    \    "step_out" : "<F4>",
+    \    "close" : "<F6>",
+    \    "detach" : "<F7>",
+    \    "set_breakpoint" : "<F10>",
+    \    "get_context" : "<F11>",
+    \    "eval_under_cursor" : "<F12>",
+    \    "eval_visual" : "<Leader>e"
+    \}
+endif
 
 "----------------
 " editorconfig
 "----------------
 " let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+let g:editorconfig_verbose = 1
 
 " ---------------
 " MatchTagAlways
@@ -108,6 +170,7 @@ let g:airline_detect_modified = 1
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#tabline#enabled = 1 " show the tab line
 let g:airline#extensions#tabline#tab_nr_type = 1 " show the tab number
+let g:airline#extensions#tagbar#flags = 'f' " show the full tag hierarchy
 let g:airline#extensions#hunks#enabled = 0
 let g:airline_mode_map = {
       \ 'n'  : 'N',
@@ -156,6 +219,8 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
                            \ 'passive_filetypes': [] }
 let g:syntastic_html_checkers = ['handlebars']
+let g:syntastic_php_checkers = ['php']
+let g:syntastic_javascript_checkers = ['eslint']
 
 " Hat tip http://git.io/SPIBfg
 let g:syntastic_error_symbol = '✗'
@@ -179,4 +244,4 @@ nnoremap <leader>os :OpenSession<CR>
 " -------
 " vim-stringify
 " -------
-map <leader>g :call Stringify()<CR>
+" map <leader>g :call Stringify()<CR>
