@@ -26,6 +26,7 @@ endif
 " ---------------
 set ruler          " Ruler on
 set relativenumber " Relative line numbers on
+set number         " And current line shows line number
 set wrap           " Line wrapping on
 set laststatus=2   " Always show the statusline
 set cmdheight=1    " Make the command area one line high
@@ -66,11 +67,12 @@ set noautowrite        " Writes on make/shell commands - DISABLE THIS as it was 
 set nofoldenable       " Disable folding entirely.
 set foldlevelstart=99  " I really don't like folds.
 set formatoptions=crql
-set iskeyword+=-       " Add extra characters that are valid parts of variables
+" set iskeyword+=-       " Add extra characters that are valid parts of variables
 set nostartofline      " Don't go to the start of the line after some commands
 set scrolloff=3        " Keep three lines below the last line when scrolling
 " set gdefault           " this makes search/replace global by default
 set switchbuf=useopen  " Switch to an existing buffer if one exists
+set splitright         " Splits open to the right of existing content
 
 " ---------------
 " Text Format
