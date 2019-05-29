@@ -2,6 +2,10 @@
 " Mappings
 " ----------------------------------------
 
+" change leader to spacebar
+"
+let mapleader=" "
+
 " Toggle paste mode with <leader>p
 nnoremap <silent> <leader>p :set paste!<CR>
 
