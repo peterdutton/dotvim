@@ -25,17 +25,17 @@ let g:ag_prg="ag --column"
 " ---------------
 
 " add vim-grepper map
-nnoremap <leader>g :Grepper -tool ag<cr>
-nnoremap <leader>G :Grepper -tool ag -buffer<cr>
+" nnoremap <leader>g :Grepper -tool rg<cr>
+" nnoremap <leader>G :Grepper -tool rg -buffer<cr>
 " initialize g:grepper with default values
-runtime plugin/grepper.vim
+" runtime plugin/grepper.vim
 " do searches based on current repo
-let g:grepper.dir = 'repo'
-let g:grepper.tools = ['ag', 'git', 'grep']
+" let g:grepper.dir = 'repo'
+" let g:grepper.tools = ['rg', 'git', 'grep']
 
 " add map for normal/visual mode
-nmap gs  <plug>(GrepperOperator)
-xmap gs  <plug>(GrepperOperator)
+" nmap gs  <plug>(GrepperOperator)
+" xmap gs  <plug>(GrepperOperator)
 
 " ---------------
 " vim-pasta (disable for CtrlP)
@@ -45,7 +45,15 @@ let g:pasta_disabled_filetypes = ['ctrlp']
 " ---------------
 " ctrlp.vim
 " ---------------
+" set defaulp search mapping
+"
 let g:ctrlp_map = '<c-p>'
+
+" enable ripgrep in ctrlp
+"
+if executable('rg')
+    let g:ctrlp_user_command = 'rg %s --files --hidden --color=never --glob ""'
+endif
 " let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 
