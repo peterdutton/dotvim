@@ -32,7 +32,7 @@ Plugin 'sandeepcr529/Buffet.vim'
 " Automatic helpers
 "
 Plugin 'xolox/vim-session'
-Plugin 'Valloric/MatchTagAlways'
+" Plugin 'Valloric/MatchTagAlways'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'SirVer/ultisnips'
@@ -54,7 +54,8 @@ Plugin 'wakatime/vim-wakatime'
 
 " MatchIt
 "
-Plugin 'matchit.zip'
+" Plugin 'matchit.zip'
+Plugin 'andymass/vim-matchup'
 
 " Language Additions
 "
