@@ -48,6 +48,7 @@ Plugin 'joonty/vdebug'
 Plugin 'tpope/vim-surround'
 Plugin 'kana/vim-textobj-user'
 Plugin 'glts/vim-textobj-comment'
+Plugin 'vim-scripts/LargeFile'
 
 " Productivity
 Plugin 'wakatime/vim-wakatime'
